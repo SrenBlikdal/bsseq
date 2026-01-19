@@ -9,7 +9,6 @@
   stopifnot(isTRUEorFALSE(sort))
   # Initialize all relevant modification-related columns as NULL
   M <- H <- U <- DE <- DI <- NO <- mod <- NULL
-  # Read and process the bedMethyl file
     # Read the bedMethyl data as a data.table object
     { dt <- .readbedMethylAsDT(file = file,
                             col_spec = "BSseq",
